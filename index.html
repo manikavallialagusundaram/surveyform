@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    span {
+        color: red;
+    }
+</style>
+<body>
+    <h1 style="text-align: center;">Survey Form</h1>
+    <h4>Name<span>*</span></h4>
+    <br>
+    <tr>
+        <td colspan="2">
+            <input type="text" id="First Name" name="First Name" placeholder="Enter Your First Name">
+            <input type="text" id="Name" name="Name" placeholder="Enter Your Last Name">
+            <div>
+                <div style="display:inline-block;">
+                    <div>
+                        <div style="display: inline-block;padding-right: 248px;">
+                            <label for="Name">First</label><br>
+                        </div>
+                        <label for="Name">Last</label>
+                    </div>
+        </td>
+    </tr>
+    </div>
+    </div>
+    <br>
+    <h4>Email</label><span>*</span></h4>
+    <input type="text" style="padding-right: 25%;" ,name="Email" id="Email-ID">
+    <h4>Your Experience<span>*</span></h4>
+    <form class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5">
+        <label for="star5" title="5 stars">&#9733;</label>
+        <input type="radio" id="star4" name="rating" value="4">
+        <label for="star4" title="4 stars">&#9733;</label>
+        <input type="radio" id="star3" name="rating" value="3">
+        <label for="star3" title="3 stars">&#9733;</label>
+        <input type="radio" id="star2" name="rating" value="2">
+        <label for="star2" title="2 stars">&#9733;</label>
+        <input type="radio" id="star1" name="rating" value="1">
+        <label for="star1" title="1 star">&#9733;</label>
+    </form>
+    </form>
+    <p>
+        overall,how would you rate your experience with us?
+    </p>
+    <h4>How satisfied are you with<span>*</span></h4>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="text-center">
+                <tr>
+                    <th></th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unsatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td class="text-left" style="background-color: lightgrey !important;">Purchase</td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionPurchase"
+                            value="veryUnsatisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionPurchase"
+                            value="unsatisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionPurchase"
+                            value="neutral"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionPurchase"
+                            value="satisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionPurchase"
+                            value="verySatisfied"></td>
+                </tr>
+                <tr>
+                    <td class="text-left">Service</td>
+                    <td><input type="radio" name="satisfactionService" value="veryUnsatisfied"></td>
+                    <td><input type="radio" name="satisfactionService" value="unsatisfied"></td>
+                    <td><input type="radio" name="satisfactionService" value="neutral"></td>
+                    <td><input type="radio" name="satisfactionService" value="satisfied"></td>
+                    <td><input type="radio" name="satisfactionService" value="verySatisfied"></td>
+                </tr>
+                <tr>
+                    <td class="text-left" style="background-color: lightgray !important;">Company Overall</td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionCompany"
+                            value="veryUnsatisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionCompany"
+                            value="unsatisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionCompany"
+                            value="neutral"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionCompany"
+                            value="satisfied"></td>
+                    <td style="background-color: lightgrey !important;"><input type="radio" name="satisfactionCompany"
+                            value="verySatisfied"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h4>How likely are you to<span>*</span></h4>
+    <div class="table-responsive">
+        <table class="table">
+            <thead class="text-center">
+                <tr>
+                    <th></th>
+                    <th>Very Unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>Likely</th>
+                    <th>Very Likely</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td class="text-left" style="background-color: lightgray;">Buy from Us Again</td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodBuy"
+                            value="veryUnlikely"></td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodBuy" value="unlikely">
+                    </td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodBuy" value="neutral">
+                    </td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodBuy" value="likely">
+                    </td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodBuy"
+                            value="veryLikely"></td>
+                </tr>
+                <tr>
+                    <td class="text-left">Recommend Our Product to Others</td>
+                    <td><input type="radio" name="likelihoodRecommendProduct" value="veryUnlikely"></td>
+                    <td><input type="radio" name="likelihoodRecommendProduct" value="unlikely"></td>
+                    <td><input type="radio" name="likelihoodRecommendProduct" value="neutral"></td>
+                    <td><input type="radio" name="likelihoodRecommendProduct" value="likely"></td>
+                    <td><input type="radio" name="likelihoodRecommendProduct" value="veryLikely"></td>
+                </tr>
+                <tr>
+                    <td class="text-left" style="background-color: lightgray;">Recommend Our Company to Others</td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodRecommendCompany"
+                            value="veryUnlikely"></td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodRecommendCompany"
+                            value="unlikely"></td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodRecommendCompany"
+                            value="neutral"></td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodRecommendCompany"
+                            value="likely"></td>
+                    <td style="background-color: lightgray;"><input type="radio" name="likelihoodRecommendCompany"
+                            value="veryLikely"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class = "form-group">
+        <label class="comments"><h4>Additional comments or suggestions</h4></label>
+        <textarea class="form-control" id="comments" rows="3"></textarea>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary my-3 px-5 py-2">Submit</button>
+        </div>
+</body>
+</html>

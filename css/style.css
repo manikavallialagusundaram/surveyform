@@ -1,0 +1,51 @@
+input{
+    padding: 10px;
+    margin-right: 10px;
+    width:20%;
+
+}
+.star{
+    color: goldenrod;
+    cursor: pointer;
+   
+}
+.star-rating {
+    direction: rtl; /* Right-to-left to position stars correctly */
+    display: inline-block;
+}
+
+.star-rating input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+.star-rating label {
+    font-size:2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+    color: gold;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: gold;
+}
+table,th,td,tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: x-large;
+    padding: 10px;
+    margin: 3px;
+    padding-right: 92px;
+}
+.form-control{
+   width:99%;
+   height:99%;
+    margin: 1px;
+}
+textarea,input{
+   resize: none;
+   color: black !important;
+}
